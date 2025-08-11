@@ -172,6 +172,7 @@ class opensearch (
   ## java settings
   ##
   Pattern[/\d+[mg]/]                        $heap_size                                    = '512m',
+  Boolean                                   $heap_dump_on_oom                             = true,
 
   ##
   ## service values

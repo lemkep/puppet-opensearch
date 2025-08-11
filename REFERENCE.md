@@ -73,6 +73,7 @@ The following parameters are available in the `opensearch` class:
 * [`use_default_security_whitelist`](#-opensearch--use_default_security_whitelist)
 * [`security_whitelist`](#-opensearch--security_whitelist)
 * [`heap_size`](#-opensearch--heap_size)
+* [`heap_dump_on_oom`](#-opensearch--heap_dump_on_oom)
 * [`manage_service`](#-opensearch--manage_service)
 * [`service_ensure`](#-opensearch--service_ensure)
 * [`service_enable`](#-opensearch--service_enable)
@@ -412,6 +413,14 @@ Data type: `Pattern[/\d+[mg]/]`
 The heap size for the JVM.
 
 Default value: `'512m'`
+
+##### <a name="-opensearch--heap_dump_on_oom"></a>`heap_dump_on_oom`
+
+Data type: `Boolean`
+
+Whether to write heap dumps on OOM
+
+Default value: `true`
 
 ##### <a name="-opensearch--manage_service"></a>`manage_service`
 
